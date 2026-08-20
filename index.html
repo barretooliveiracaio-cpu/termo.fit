@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThermoFit Shirt - Tecnologia que Veste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">ThermoFit<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#tecnologia">Tecnologia</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#depoimentos">Avaliações</a>
+    </nav>
+    <button class="btn-secundario" onclick="adicionarAoCarrinho()">🛒 Carrinho (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main class="container">
+    <section class="produto-galeria">
+      <div class="badge">Lançamento</div>
+      <div class="card-imagem">👕</div>
+    </section>
+
+    <section class="produto-detalhes">
+      <h1>ThermoFit Shirt</h1>
+      <p class="tagline">Camiseta alta performance com tecnologia de regulação térmica proativa.</p>
+      
+      <div class="preco-box">
+        <span class="preco-antigo">R$ 189,00</span>
+        <span class="preco">R$ 129,00</span>
+        <span class="parcelamento">ou 3x de R$ 43,00 sem juros</span>
+      </div>
+
+      <div class="opcoes-tamanho">
+        <label>Selecione o Tamanho:</label>
+        <div class="tamanhos">
+          <button class="btn-tamanho" onclick="selecionarTamanho(this)">P</button>
+          <button class="btn-tamanho ativo" onclick="selecionarTamanho(this)">M</button>
+          <button class="btn-tamanho" onclick="selecionarTamanho(this)">G</button>
+          <button class="btn-tamanho" onclick="selecionarTamanho(this)">GG</button>
+        </div>
+      </div>
+
+      <button class="btn-principal" onclick="comprar()">Comprar Agora</button>
+
+      <div class="garantias">
+        <div class="item-garantia">⚡ Envio em até 24h</div>
+        <div class="item-garantia">🛡️ 7 dias de garantia</div>
+        <div class="item-garantia">💳 Pagamento seguro</div>
+      </div>
+    </section>
+  </main>
+
+  <section class="secao-beneficios" id="beneficios">
+    <div class="card-beneficio">
+      <h3>Regulação Térmica</h3>
+      <p>Ajuste dinâmico à temperatura do seu corpo durante o dia todo.</p>
+    </div>
+    <div class="card-beneficio">
+      <h3>Anti-Suor e Anti-Odor</h3>
+      <p>Tecido de secagem ultra-rápida com ação antibacteriana.</p>
+    </div>
+    <div class="card-beneficio">
+      <h3>Sem Amassados</h3>
+      <p>Não precisa passar a ferro. Pronta para vestir direto do varal.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

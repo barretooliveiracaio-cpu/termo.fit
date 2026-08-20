@@ -1,0 +1,238 @@
+:root {
+  --azul-marinho: #0a192f;
+  --azul-medio: #1e3a8a;
+  --azul-destaque: #2563eb;
+  --azul-claro: #eff6ff;
+  --branco: #ffffff;
+  --cinza-texto: #475569;
+  --cinza-borda: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: var(--azul-marinho);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: var(--azul-marinho);
+  color: var(--branco);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--azul-destaque);
+}
+
+.nav-links a {
+  color: var(--branco);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  gap: 50px;
+  background: var(--branco);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(10, 25, 47, 0.05);
+}
+
+.produto-galeria {
+  flex: 1;
+  position: relative;
+  background-color: var(--azul-claro);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 380px;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: var(--azul-destaque);
+  color: var(--branco);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-imagem {
+  font-size: 140px;
+}
+
+.produto-detalhes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 36px;
+  color: var(--azul-marinho);
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: var(--cinza-texto);
+  font-size: 15px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.preco-box {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: var(--azul-claro);
+  border-radius: 8px;
+}
+
+.preco-antigo {
+  display: block;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: var(--cinza-texto);
+}
+
+.preco {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--azul-medio);
+}
+
+.parcelamento {
+  display: block;
+  font-size: 13px;
+  color: var(--cinza-texto);
+  margin-top: 4px;
+}
+
+.opcoes-tamanho {
+  margin-bottom: 24px;
+}
+
+.opcoes-tamanho label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tamanhos {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-tamanho {
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--cinza-borda);
+  background: var(--branco);
+  color: var(--azul-marinho);
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-tamanho:hover, .btn-tamanho.ativo {
+  border-color: var(--azul-destaque);
+  background-color: var(--azul-destaque);
+  color: var(--branco);
+}
+
+.btn-principal {
+  background-color: var(--azul-destaque);
+  color: var(--branco);
+  border: none;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-principal:hover {
+  background-color: var(--azul-medio);
+}
+
+.btn-secundario {
+  background: transparent;
+  border: 1px solid var(--branco);
+  color: var(--branco);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.garantias {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--cinza-borda);
+  padding-top: 16px;
+  font-size: 12px;
+  color: var(--cinza-texto);
+  font-weight: 600;
+}
+
+.secao-beneficios {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-beneficio {
+  background: var(--branco);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--cinza-borda);
+}
+
+.card-beneficio h3 {
+  color: var(--azul-medio);
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.card-beneficio p {
+  color: var(--cinza-texto);
+  font-size: 14px;
+  line-height: 1.4;
+}
